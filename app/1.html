@@ -5,12 +5,8 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная</title>  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@700&family=Doppio+One&family=Taprom&display=swap" rel="stylesheet">  
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/main.css">
+  <title>1. Главная</title>  
+  @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -21,28 +17,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="top" id="top">
-        <div class="top-w">
-          <div class="top-l">
-            <div class="top-l-txt">Ваш город:</div>
-            <a href="#" class="top-l-a">Самара</a>
-          </div>
-          <div class="top-c">
-            <a href="#" class="top-soc"><img src="img/soc-1.svg" /></a>
-            <a href="#" class="top-soc"><img src="img/soc-2.svg" /></a>
-            <a href="#" class="top-soc"><img src="img/soc-3.svg" /></a>
-            <a href="#" class="top-soc"><img src="img/soc-4.svg" /></a>
-            <a href="#" class="top-soc"><img src="img/soc-5.svg" /></a>
-            <a href="#" class="top-soc"><img src="img/soc-6.svg" /></a>
-          </div>
-          <div class="top-r">
-            <div class="top-r-w">
-              <a href="tel:+78001002680" class="top-r-a">8 (800) 100 26 80</a>
-              <div class="top-r-txt">ЕЖЕДНЕВНО 10:00-20:00</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      @@include('var/_top.html')
       <div class="top-2-w">
         <div class="contain">
           <div class="top-2-inn">
@@ -255,9 +230,7 @@
 </div>
 <!--wrapper-->
 
-<script src="js/jquery-3.4.1.min.js"></script>      
-<script src="js/slick.js"></script>
-<script src="js/common.js"></script>
+@@include('var/_scripts.html')
 </body>
 </html>
 
