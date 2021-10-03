@@ -13,22 +13,39 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
+$('.mnu-close').click(function () {
+  
+      $(".toggle-mnu").removeClass("on");
+      $(".top-mnu").fadeOut();
+  
+})
+
 
   $(".top-mnu").click(function (e) {
     e.stopPropagation();
   });
 
 
-  //$('.wrapper').prepend('<span class="eye-3"></span>');
+  /************************************/
+
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
+let pg = parseInt(document.location.pathname.match(/\d+/))
+$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
+$('body:not(.active)').css('background-image', "unset");
+
+$('.eye-3').click(function (e) {
+  e.preventDefault();  
+  $('body').toggleClass('active');
+  let pg = parseInt(document.location.pathname.match(/\d+/));
+  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
+  $('body:not(.active)').css('background-image', "unset");
+
+});*/
+
+/************************************/
 
 
-  $('.eye-3').click(function (e) {
-    e.preventDefault();
-    $('body').toggleClass('active');
-  });
-
-
-  $("#phone_1").mask("+7 (999) 999-99-99");
+  //$("#phone_1").mask("+7 (999) 999-99-99");
 
 //Add Inactive Class To All Accordion Headers
 $('.accordion-header').toggleClass('inactive-header');
@@ -87,42 +104,47 @@ $('.accordion-header').toggleClass('inactive-header');
 
   });
 
-  $("#calc-distance").slider({
-    range: "min",
-    step: 50000,
-    value: 750000,
-    min: 0,
-    max: 10000000,
-    slide: function( event, ui ) {
-      $( "#amount-distance" ).val( ui.value.toLocaleString() );
-    }
+
+
+  if($('.carous').length) {
+    $('.carous').slick({  
+     dots: false,
+     infinite: true,
+     speed: 300,
+     slidesToShow: 1,   
+   });
+  }
+
+  if($('.pop-cat-w').length) {
+    $('.pop-cat-w').slick({  
+      dots: true,
+     infinite: true,
+     speed: 300,
+     slidesToShow: 4,   
+     responsive: [
+
+     {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3        
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 570,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    ]
   });
-  $( "#amount-distance" ).val( $( "#calc-distance" ).slider( "value" ).toLocaleString() );
+  }
 
-  $("#calc-distance-2").slider({
-    range: "min",
-    step: 50000,
-    value: 0,
-    min: 0,
-    max: 10000000,
-    slide: function( event, ui ) {
-      $( "#amount-distance-2" ).val( ui.value.toLocaleString() );
-    }
-  });
-  $( "#amount-distance-2" ).val( $( "#calc-distance-2" ).slider( "value" ).toLocaleString() );
-
-
-
-  $('.carous-items').slick({  
-
-
-   dots: true,
-   infinite: true,
-   speed: 300,
-   slidesToShow: 1,
-   centerMode: true,
-   variableWidth: true
- });
 
 /*
   infinite: true,
@@ -154,7 +176,27 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
 
-  $('select').fancySelect();
+
+  $('a[href*=\\#]:not([href=\\#])').click(function () {
+    elementClick = $(this).attr("href");
+    destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
+    return false;
+  });
+
+
+  $(window).scroll(function(){
+    var wt = $(window).scrollTop();  
+    var wh = $(window).height();    
+    if (wt > 600) {
+      $('.serv-arr-up').show(400);
+    }
+    else {
+     $('.serv-arr-up').hide();
+   }
+ });
+
+  //$('select').fancySelect();
 
 }); //ready
 

@@ -8,8 +8,8 @@
   <title>Главная</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@700&family=Doppio+One&family=Fira+Sans:wght@300;400&family=Taprom&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@700&family=Doppio+One&family=Taprom&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +21,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="top">
+      <div class="top" id="top">
         <div class="top-w">
           <div class="top-l">
             <div class="top-l-txt">Ваш город:</div>
@@ -37,7 +37,7 @@
           </div>
           <div class="top-r">
             <div class="top-r-w">
-              <a href="#" class="top-r-a">8 (800) 100 26 80</a>
+              <a href="tel:+78001002680" class="top-r-a">8 (800) 100 26 80</a>
               <div class="top-r-txt">ЕЖЕДНЕВНО 10:00-20:00</div>
             </div>
           </div>
@@ -53,8 +53,18 @@
               <a href="#" class="top-2-r-func"><img src="img/print.svg" alt=""></a>                
             </div>
           </div>
-          <div class="top-2-ul-w">
-            <ul class="top-2-ul">
+        </div>
+      </div>
+      <div class="top-2-ul-w">
+        <div class="contain">
+
+          <div class="col-mnu">
+            <div class="hidden-mnu">
+              <a href="#" class="toggle-mnu"><span></span></a>
+              <span class="mnu-txt">Меню</span>
+            </div>
+
+            <ul class="top-2-ul top-mnu">
               <li><a href="#">КАТАЛОГ</a></li>
               <li><a href="#">УСЛУГИ</a></li>
               <li><a href="#">О НАС</a></li>
@@ -63,10 +73,11 @@
               <li><a href="#">ОБУЧЕНИЕ</a></li>
               <li><a href="#">КОНТАКТЫ</a></li>
               <li><a href="#">ОПТ</a></li>
+              <span class="mnu-close show-767"></span>
             </ul>
           </div>
         </div>
-      </div><!--top-2-w-->
+      </div>      
     </header>
     <main class="main">
       <div class="carous">
@@ -89,8 +100,28 @@
               </div>
             </div>
           </div>
-        </div><!--carous-it-->          
-      </div>
+        </div><!--carous-it-->  
+        <div class="carous-it">
+          <img src="img/carous.jpg" />
+          <div class="carous-cont-w">
+            <div class="contain">
+              <div class="carous-w">
+                <div class="carous-r">
+                  <div class="carous-r-w">
+                    <div class="carous-txt-1">Takamine</div>
+                    <div class="carous-txt-2">гитара</div>
+                    <div class="carous-txt-3">
+                      винтажная 12-струнная<br />
+                      GJ72CE-12BSB
+                    </div>
+                    <a href="#" class="carous-btn btn">подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--carous-it-->        
+      </div><!--carous-->
       <div class="cat">
         <div class="contain">
           <div class="cat-w">
@@ -144,124 +175,157 @@
       <div class="pop">
         <div class="contain">
           <div class="pop-w">
-
             <h2>Популярные товары</h2>
-
-
             <div class="pop-cat-row">
               <a href="#" class="pop-cat-arr-l"></a>
               <div class="pop-cat-w">
-                <a href="#" class="pop-cat-it">
-                  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
-                  <div class="pop-cat-inf">
-                    <div class="pop-cat-inf-w">
-                      <div class="pop-cat-inf-txt-w">
-                        <div class="pop-cat-inf-txt-1">Укулеле</div>
-                        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
-                      </div>
-                      <div class="pop-cat-inf-pr-w">
-                        <div class="pop-pr-l">
-                          <div class="pop-pr-l-txt-1">₽24 890</div>
-                          <div class="pop-pr-l-txt-2">₽24 890</div>
-                        </div>
-                        <div class="pop-pr-r">
-                          <div class="pop-pr-r-star-w">
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                          </div>
-                          <div class="pop-pr-r-txt">7 отзывов</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="pop-cat-it">
-                  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
-                  <div class="pop-cat-inf">
-                    <div class="pop-cat-inf-w">
-                      <div class="pop-cat-inf-txt-w">
-                        <div class="pop-cat-inf-txt-1">Укулеле</div>
-                        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
-                      </div>
-                      <div class="pop-cat-inf-pr-w">
-                        <div class="pop-pr-l">
-                          <div class="pop-pr-l-txt-1">₽24 890</div>
-                          <div class="pop-pr-l-txt-2">₽24 890</div>
-                        </div>
-                        <div class="pop-pr-r">
-                          <div class="pop-pr-r-star-w">
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                          </div>
-                          <div class="pop-pr-r-txt">7 отзывов</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="pop-cat-it">
-                  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
-                  <div class="pop-cat-inf">
-                    <div class="pop-cat-inf-w">
-                      <div class="pop-cat-inf-txt-w">
-                        <div class="pop-cat-inf-txt-1">Укулеле</div>
-                        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
-                      </div>
-                      <div class="pop-cat-inf-pr-w">
-                        <div class="pop-pr-l">
-                          <div class="pop-pr-l-txt-1">₽24 890</div>
-                          <div class="pop-pr-l-txt-2">₽24 890</div>
-                        </div>
-                        <div class="pop-pr-r">
-                          <div class="pop-pr-r-star-w">
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                          </div>
-                          <div class="pop-pr-r-txt">7 отзывов</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="pop-cat-it">
-                  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
-                  <div class="pop-cat-inf">
-                    <div class="pop-cat-inf-w">
-                      <div class="pop-cat-inf-txt-w">
-                        <div class="pop-cat-inf-txt-1">Укулеле</div>
-                        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
-                      </div>
-                      <div class="pop-cat-inf-pr-w">
-                        <div class="pop-pr-l">
-                          <div class="pop-pr-l-txt-1">₽24 890</div>
-                          <div class="pop-pr-l-txt-2">₽24 890</div>
-                        </div>
-                        <div class="pop-pr-r">
-                          <div class="pop-pr-r-star-w">
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                            <div class="pop-pr-r-star"></div>
-                          </div>
-                          <div class="pop-pr-r-txt">7 отзывов</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <a href="#" class="pop-cat-arr-r"></a>                
-            </div>
+                <div class="pop-cat-col">
+                  <a href="#" class="pop-cat-it">
+  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <div class="pop-cat-inf-txt-1">Укулеле</div>
+        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <div class="pop-pr-r-txt">7 отзывов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+                <div class="pop-cat-col">
+                  <a href="#" class="pop-cat-it">
+  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <div class="pop-cat-inf-txt-1">Укулеле</div>
+        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <div class="pop-pr-r-txt">7 отзывов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+                <div class="pop-cat-col">
+                  <a href="#" class="pop-cat-it">
+  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <div class="pop-cat-inf-txt-1">Укулеле</div>
+        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <div class="pop-pr-r-txt">7 отзывов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+                <div class="pop-cat-col">
+                  <a href="#" class="pop-cat-it">
+  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <div class="pop-cat-inf-txt-1">Укулеле</div>
+        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <div class="pop-pr-r-txt">7 отзывов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+                <div class="pop-cat-col">
+                  <a href="#" class="pop-cat-it">
+  <div class="pop-cat-img-w"><img src="img/pop.png" class="pop-cat-img" /></div>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <div class="pop-cat-inf-txt-1">Укулеле</div>
+        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <div class="pop-pr-r-txt">7 отзывов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+              </div>              
+            </div><!--pop-cat-row-->
           </div>
         </div>
       </div>
@@ -286,42 +350,115 @@
                 <a href="#" class="serv-it-1-a">Услуги</a>
               </div>
               <div class="serv-it serv-it-3">
-                 <div class="serv-it-txts">
-                  <div class="serv-it-2-txt">В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию музыкальных инструментов, в том числе и изготовление на заказ.</div>
-                  <a href="#" class="serv-it-2-a">ПОКАЗАТЬ ЕЩЁ</a>
-                </div>
-                <a href="#" class="serv-it-1-a">РЕМОНТ</a>
+               <div class="serv-it-txts">
+                <div class="serv-it-2-txt">В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию музыкальных инструментов, в том числе и изготовление на заказ.</div>
+                <a href="#" class="serv-it-2-a">ПОКАЗАТЬ ЕЩЁ</a>
               </div>
-            </div>            
+              <a href="#" class="serv-it-1-a">РЕМОНТ</a>
+            </div>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="join">
+    <div class="join-contain contain">
+      <div class="join-w">
+        <form class="join-form-w">
+          <div class="join-txt-w">
+            <div class="join-txt-1">ВСТУПАЙ В КЛУБ</div>
+            <div class="join-txt-2">GUITAR LAVKA</div>
+            <div class="join-txt-3">Полезные письма об инструментах и мероприятиях</div>
+          </div>
+          <div class="join-form-w-2">
+            <div class="join-form-row">
+              <input class="join-form-input-text" type="text" placeholder="Ваш email ..." /><button class="join-form-tg-btn"></button>
+            </div>
+            <a href="#" class="join-form-w-2-txt">Я даю согласие на обработку своих персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="foot">
+  <div class="contain">
+    <div class="foot-w">
+      <div class="foot-col-1">
+        <a href="#" class="foot-logo"><img src="img/logo-foot.png" /></a>
+        <div class="foot-col-1-txt-2">
+          Мы работаем по всей России, <br />
+          поэтому можем сделать онлайн-показ<br />
+          инструмента и доставить его до вашей двери
+        </div>
+        <div class="foot-cont">
+
+          <div class="foot-cont-item">
+            <div class="foot-cont-txt-1">Остались вопросы?</div>
+            <a href="tel:+78001002680" class="foot-cont-phone">8 (800) 100-26-80</a>
+          </div>
+          <div class="foot-cont-item">
+            <div class="foot-cont-txt-2">ЕЖЕДНЕВНО 10:00 - 20:00</div>
+            <a href="mailto:info@guitarlavka.ru" class="foot-cont-mail">info@guitarlavka.ru</a>
+          </div>
+          <div class="foot-cont-soc-w">
+            <a href="#" class="foot-cont-soc"><img src="img/soc-foot-1.png" class="foot-cont-soc-img" /></a><a href="#" class="foot-cont-soc"><img src="img/soc-foot-2.png" class="foot-cont-soc-img" /></a>
+            <a href="#" class="foot-cont-soc"><img src="img/soc-foot-3.png" class="foot-cont-soc-img" /></a><a href="#" class="foot-cont-soc"><img src="img/soc-foot-4.png" class="foot-cont-soc-img" /></a>
+            <a href="#" class="foot-cont-soc"><img src="img/soc-foot-5.png" class="foot-cont-soc-img" /></a><a href="#" class="foot-cont-soc"><img src="img/soc-foot-6.png" class="foot-cont-soc-img" /></a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="join">
-      <div class="contain">
-        <div class="join-w">
-          <form class="join-form-w">
-            <div class="join-txt-w">
-              <div class="join-txt-1">ВСТУПАЙ В КЛУБ</div>
-              <div class="join-txt-2">GUITAR LAVKA</div>
-              <div class="join-txt-3">Полезные письма об инструментах и мероприятиях</div>
-            </div>
-            <div class="join-form-w-2">
-              <div class="join-form-row"><input class="join-form-input-text" type="text" placeholder="   Ваш email ... " /><button class="join-form-tg-btn"></button></div>
-              <a href="#" class="join-form-w-2-txt">Я даю согласие на обработку своих персональных данных</a>
-            </div>
-          </form>
+        <div class="foot-pay">
+          <div class="foot-pay-txt">СПОСОБЫ ОПЛАТЫ</div>
+          <div class="foot-pay-row">
+            <a href="#" class="foot-pay-img-w"><img src="img/pay-1.png" /></a><a href="#" class="foot-pay-img-w"><img src="img/pay-2.png" /></a><a href="#" class="foot-pay-img-w"><img src="img/pay-3.png" /></a>
+            <a href="#" class="foot-pay-img-w"><img src="img/pay-4.png" /></a><a href="#" class="foot-pay-img-w"><img src="img/pay-5.png" /></a>
+          </div>
+        </div>
+        <div class="foot-col-1-txt-2">
+          © 2021 GuitarLavka - музыкальный магазин<br />
+          Политика конфиденциальности
         </div>
       </div>
+      <div class="foot-col-2">
+        <div class="foot-col-2-menu-w">
+          <div class="foot-col-2-menu">
+            <div class="foot-col-2-h-menu">КАТАЛОГ</div>
+            <ul class="foot-col-2-ul">
+              <li><a href="#">Гитары</a></li>
+              <li><a href="#">Укулеле</a></li>
+              <li><a href="#">Аксесуары</a></li>
+              <li><a href="#">Струны</a></li>
+            </ul>
+          </div>
+          <div class="foot-col-2-menu">
+            <div class="foot-col-2-h-menu">СЕРВИС</div>
+            <ul class="foot-col-2-ul">
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Доставка</a></li>
+            </ul>
+          </div>
+          <div class="foot-col-2-menu">
+            <div class="foot-col-2-h-menu">УСЛУГИ</div>
+            <ul class="foot-col-2-ul">
+              <li><a href="#">Ремонт</a></li>
+              <li><a href="#">Онлайн подбор </a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Комиссионка</a></li>
+            </ul>
+          </div>
+        </div>
+        <span class="foot-col-2-phone-a"><img src="img/telephone-1.png" /></span>
+      </div>
     </div>
-  </main>
-  <footer class="footer">
-  </footer>
-  <span class="serv-arr-up"></span>
+  </div>
+</footer>
+<a href="#top" class="serv-arr-up"></a>
 </div>
 <!--wrapper-->
 
 <script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/slick.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
