@@ -16,23 +16,24 @@ $bcol: #f3ebdc;
 $ff2: 'Abhaya Libre', serif;
 $ff3: 'Doppio One', sans-serif;
 $ff5: 'Taprom', cursive;
-$ff6: Sansation, sans-serif;
+$ff6: 'Sansation', sans-serif;
 $sana: 'Fira Sans', sans-serif;
 
 
 @font-face {
-  font-family: Sansation;
-  src: url('../fonts/SansationRegular.eot');
-  src: local('Sansation Regular'), local('SansationRegular'),
-  url('../fonts/SansationRegular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/SansationRegular.woff') format('woff'),
-  url('../fonts/SansationRegular.ttf') format('truetype');
+  font-family: 'Sansation';
+  src: url('../fonts/$ff6Regular.eot');
+  src: local('$ff6 Regular'), local('$ff6Regular'),
+  url('../fonts/$ff6Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/$ff6Regular.woff') format('woff'),
+  url('../fonts/$ff6Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @import "_reset.scss";
 @import "_vars.scss";
+@import "_nouislider.scss";
 
 
 a {
@@ -1202,15 +1203,209 @@ h2 {
 .contain-1200 {
   max-width: 1200px;
   width: 100%;
-  padding: 0 27px;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  padding: 0 27px;  
+  box-sizing: content-box;
 }
 
 .pop-cat-it-2 {
   margin-bottom: 25px;
 }
+
+
+
+
+
+
+
+
+.catalog-top-logo > img {
+}
+
+
+
+.filter {
+
+}
+
+
+.filter-w {
+}
+
+.filter-its {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.filter-its-span {
+  font-family: $ff6;
+  font-size: 14px;
+  color: rgb(181, 181, 181);
+  margin-right: 6px;
+}
+
+.filter-its-b {
+}
+
+.filter-cat-w {
+  width: 460px;
+  background: rgb(59, 58, 64);
+  border-radius: 4px;
+  padding: 13px 17px 10px 37px;
+}
+
+.filter-cat-ind {
+}
+
+.catfilter-it {
+  margin-bottom: 3px;
+}
+
+.catfilter-tit {
+  font-family: $ff6;
+  font-size: 20px;
+  color: rgb(207, 206, 206);
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 8px;        
+    background: url("../img/arrow-guitar.png") $nr center;
+    background-size: 14px;
+    transform: rotate(180deg);
+  }
+  &.hide {
+    &:after {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+
+
+
+
+
+
+.catfilter-cont {  
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  line-height: 1;    
+  padding: 12px 0 7px 0;
+  &.hide {
+    padding: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;    
+}
+}
+
+
+.filter-label {
+  margin-bottom: 12px;
+  display: flex;  
+  align-items: center;
+  width: 100%;    
+  &:first-child {
+    
+  }  
+  &:last-child {
+    
+  }
+  input[type="checkbox"] {
+    display: none;
+    + span {
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgb(207, 206, 206);  
+      border-radius: 4px;
+      flex: 0 0 auto;              
+    }
+    &:checked {
+      + span {
+        background: rgb(216, 119, 0);
+        border: 2px solid rgb(207, 206, 206);
+
+
+
+      }
+    }
+  }          
+}
+
+
+
+.filter-label-span-txt {
+  margin-left: 10px;
+  font-family: $ff6;
+  font-size: 16px;
+  color: #CFCECE;
+}
+
+
+
+.catalog {
+
+}
+
+.catalog-w {
+  margin-bottom: 34px;
+}
+
+.catalog-top-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.catalog-top-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  margin-right: 13px;
+}
+
+.catalog-form {  
+  flex-grow: 1;
+}
+
+input[type="text"].catalog-search-input-text {
+  background: url("../img/search-form.png") left 12px center no-repeat rgb(72, 71, 76);
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px 37px;
+}
+
+.catalog-search-ul {
+  display: flex;
+}
+
+.catalog-search-li {
+  margin-right: 15px;
+}
+
+.catalog-search-way-a {
+
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 0px;
+}
+
+
 
 @import "_media.scss";
 @import "_hides.scss";

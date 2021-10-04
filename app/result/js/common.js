@@ -13,17 +13,32 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-$('.mnu-close').click(function () {
-  
-      $(".toggle-mnu").removeClass("on");
-      $(".top-mnu").fadeOut();
-  
-})
+  $('.mnu-close').click(function () {
+
+    $(".toggle-mnu").removeClass("on");
+    $(".top-mnu").fadeOut();
+
+  })
 
 
   $(".top-mnu").click(function (e) {
     e.stopPropagation();
   });
+
+  $('.catfilter-it').each(function () {
+    let tit = $(this).find('.catfilter-tit');
+    let cont = $(this).find('.catfilter-cont');
+    tit.click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('hide');
+      cont.toggleClass('hide');
+    });
+  });
+
+
+
+
+
 
 
   /************************************/
@@ -118,31 +133,31 @@ $('.accordion-header').toggleClass('inactive-header');
   if($('.pop-cat-w').length) {
     $('.pop-cat-w').slick({  
       dots: true,
-     infinite: true,
-     speed: 300,
-     slidesToShow: 4,   
-     responsive: [
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,   
+      responsive: [
 
-     {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3        
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 570,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-    ]
-  });
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3        
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      ]
+    });
   }
 
 
@@ -200,3 +215,24 @@ $('.accordion-header').toggleClass('inactive-header');
 
 }); //ready
 
+
+
+
+//RANGE
+const priceSlider = document.querySelector('.price__range');
+if (priceSlider) {
+
+  //let textFrom = priceSlider.getAttribute('data-from');
+  let textTo = priceSlider.getAttribute('data-to');
+
+  noUiSlider.create(priceSlider, {
+    start: [4290, 19990],
+    connect: true,
+    //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
+    range: {
+      'min': [0],
+      'max': [25000]
+    }    
+  });
+
+  }// if priceSlider
