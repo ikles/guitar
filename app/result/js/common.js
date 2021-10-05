@@ -37,7 +37,15 @@ jQuery(document).ready(function( $ ) {
 
 
 
-
+  $('.lfilter-it').each(function () {
+    let tit = $(this).find('.lfilter-tit');
+    let cont = $(this).find('.lfilter-cont');
+    tit.click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('hide');
+      cont.toggleClass('hide');
+    });
+  });
 
 
 
@@ -211,7 +219,40 @@ $('.accordion-header').toggleClass('inactive-header');
    }
  });
 
-  //$('select').fancySelect();
+  
+  $('.teasers-actions-sort-link').click(function (e) {
+    e.preventDefault();
+    $('.teasers-actions-sort-link').removeClass('active');
+    $(this).addClass('active');
+    if ( $(this).hasClass('teasers-actions-sort-link-row')) {
+      $('.cat-teasers-row').addClass('cat-teasers-row-row');
+    }
+    else {
+     $('.cat-teasers-row').removeClass('cat-teasers-row-row'); 
+   }
+ });
+
+
+/*  if($('select').length) {
+    $('select').select2({
+      minimumResultsForSearch: -1
+    });
+  }*/
+
+  $('[data-fancybox="gallery-1"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
 
 }); //ready
 
@@ -226,12 +267,12 @@ if (priceSlider) {
   let textTo = priceSlider.getAttribute('data-to');
 
   noUiSlider.create(priceSlider, {
-    start: [4290, 19990],
+    start: [60000, 236300],
     connect: true,
-    //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
+    tooltips: [wNumb({ decimals: 0, prefix: '₽' + '' }), wNumb({ decimals: 0, prefix: '₽' + '' })],
     range: {
       'min': [0],
-      'max': [25000]
+      'max': [300000]
     }    
   });
 

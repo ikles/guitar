@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@700&family=Doppio+One&family=Taprom&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,8 +44,6 @@
           </div>
         </div>
       </div>
-
-
     </header>
 
 
@@ -62,14 +61,9 @@
       <div class="filter">
         <div class="contain">
           <div class="filter-w">
-            <a class="filter-its"><span class="filter-its-span">ФИЛЬТР</span><img src="img/filter.svg" class="filter-its-b" /></a>
+            <a href="#" class="filter-its"><span class="filter-its-span">ФИЛЬТР</span><img src="img/filter.svg" class="filter-its-b" /></a>
             <div class="filter-cat-w">
               <div class="filter-cat-ind">
-
-
-
-
-
                 <div class="catfilter-it">
                   <div class="catfilter-tit">Цена</div>
                   <div class="catfilter-cont">
@@ -202,55 +196,133 @@
 </div>
 </div>
 </div>
-<div class="catalog">
+
+
+<div class="catalog-top-search">
   <div class="contain">
-    <div class="catalog-w">
-      <div class="catalog-top-search">
-        <a class="catalog-top-logo"><img src="img/logo-cat.png" /></a>
-        <form class="catalog-form">
-          <input class="catalog-search-input-text" type="text" placeholder="ПОИСК ..." />
-        </form>
+    <div class="catalog-top-search-w">
+      <a href="index.html" class="catalog-top-logo"><img src="img/logo-cat.png" /></a>
+      <form class="catalog-form">
+        <input class="catalog-search-input-text" type="text" placeholder="ПОИСК ..." />
+      </form>
+      <div class="top-2-r">
+        <a href="#" class="top-2-r-func top-2-r-func-2"><img src="img/like.svg" alt=""></a>
+        <a href="#" class="top-2-r-func top-2-r-func-2"><img src="img/print.svg" alt=""></a>
       </div>
-      <ul class="catalog-search-ul">
-        <li class="catalog-search-li"><a class="catalog-search-way-a">Главная</a></li>
-        <li class="catalog-search-li"><a class="catalog-search-way-a">Каталог</a></li>
-      </ul>
     </div>
   </div>
-</div>        
+</div>
 
+<div class="bread-w">
+  <div class="contain">
+    <ul class="catalog-search-ul">
+      <li class="catalog-search-li"><a href="#" class="catalog-search-way-a">Главная</a></li>
+      <li class="catalog-search-li"><a href="#" class="catalog-search-way-a">Каталог</a></li>
+    </ul>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="contain-1200">
-  <div class="cat-teasers-cols cols">
-    <div class="col-l">
-    </div><!--col-l-->
-    <div class="col-r">
-      <div class="cat-teasers-row">
-        <div class="cat-teasers-col">
-          <a href="#" class="pop-cat-it pop-cat-it-2">
-  <div class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></div>
+<div class="cat-teasers-cols">
+  <div class="contain">
+    <div class="cols">
+      <div class="col-l">
+        <div class="lfilter-caps">
+          <span>Каталог</span>
+          <span>Фильтры</span>
+        </div>
+        <div class="lfilter">
+          <div class="lfilter-it">
+            <div class="lfilter-tit hide">ГИТАРЫ</div>
+            <div class="lfilter-cont hide">
+              <ul>
+                <li><a href="#">Тенор</a></li>
+                <li><a href="#">Сопрано</a></li>
+                <li><a href="#">Концерт</a></li>
+              </ul>
+            </div>
+          </div><!--lfilter-it-->
+          <div class="lfilter-it">
+            <div class="lfilter-tit">УКУЛЕЛЕ</div>
+            <div class="lfilter-cont">
+              <ul>
+                <li><a href="#">Тенор</a></li>
+                <li><a href="#">Сопрано</a></li>
+                <li><a href="#">Концерт</a></li>
+              </ul>
+            </div>
+          </div><!--lfilter-it-->
+          <div class="lfilter-it">
+            <div class="lfilter-tit hide">АКСЕСУАРЫ</div>
+            <div class="lfilter-cont hide">
+              <ul>
+                <li><a href="#">Тенор</a></li>
+                <li><a href="#">Сопрано</a></li>
+                <li><a href="#">Концерт</a></li>
+              </ul>
+            </div>
+          </div><!--lfilter-it-->
+          <div class="lfilter-it">
+            <div class="lfilter-tit hide">СТРУНЫ</div>
+            <div class="lfilter-cont hide">
+              <ul>
+                <li><a href="#">Тенор</a></li>
+                <li><a href="#">Сопрано</a></li>
+                <li><a href="#">Концерт</a></li>
+              </ul>
+            </div>
+          </div><!--lfilter-it-->
+        </div><!--lfilter-->
+      </div><!--col-l-->
+      <div class="col-r">
+        <div class="cat-teasers-actions">
+          <div class="teasers-actions-col-1">
+            <div class="cat-teasers-actions-caption">155</div>
+            <div class="teasers-actions-prods">товаров</div>
+          </div>
+          <div class="teasers-actions-col-2">
+            <label class="teasers-actions-label">
+              <input type="checkbox">            
+              <span class="teasers-actions-label-span"></span>
+              <span class="cat-teasers-actions-caption">В наличии</span>
+            </label>
+          </div>
+          <div class="teasers-actions-col-3">
+            <span class="cat-teasers-actions-caption">Сортировка </span>            
+            <select class="select teasers-actions-select">
+              <option value="По умолчанию ...">По умолчанию ...</option>
+              <option value="По возрастанию цены">По возрастанию цены</option>
+              <option value="По убыванию цены">По убыванию цены</option>
+            </select>
+          </div>
+          <div class="teasers-actions-col-4">
+            <span class="cat-teasers-actions-caption">Показывать по </span>
+            <select class="select teasers-actions-select">
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="45">45</option>              
+            </select>
+          </div>      
+          <div class="teasers-actions-col-5">
+            <a href="#" class="teasers-actions-sort-link teasers-actions-sort-link-grid active">
+              <span class="sort-active"><img src="img/grid.svg"></span>
+              <span class="sort-nonactive"><img src="img/grid-non.svg"></span>
+            </a>
+            <a href="#" class="teasers-actions-sort-link teasers-actions-sort-link-row">
+              <span class="sort-active"><img src="img/row.svg"></span>
+              <span class="sort-nonactive"><img src="img/row-non.svg"></span>
+            </a>
+          </div>
+        </div>
+        <!--cat-teasers-actions-->
+        <div class="cat-teasers-row">          
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></a>
   <div class="pop-cat-inf">
     <div class="pop-cat-inf-w">
       <div class="pop-cat-inf-txt-w">
-        <div class="pop-cat-inf-txt-1">Укулеле</div>
-        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
       </div>
       <div class="pop-cat-inf-pr-w">
         <div class="pop-pr-l">
@@ -265,21 +337,40 @@
             <div class="pop-pr-r-star"></div>
             <div class="pop-pr-r-star"></div>
           </div>
-          <div class="pop-pr-r-txt">7 отзывов</div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
         </div>
       </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1"></div>
+      <div class="status-2">под заказ</div>      
     </div>
   </div>
-</a>
-        </div><!--cat-teasers-col-->
-        <div class="cat-teasers-col">
-          <a href="#" class="pop-cat-it pop-cat-it-2">
-  <div class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop3.png" class="pop-cat-img" /></a>
   <div class="pop-cat-inf">
     <div class="pop-cat-inf-w">
       <div class="pop-cat-inf-txt-w">
-        <div class="pop-cat-inf-txt-1">Укулеле</div>
-        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
       </div>
       <div class="pop-cat-inf-pr-w">
         <div class="pop-pr-l">
@@ -294,21 +385,40 @@
             <div class="pop-pr-r-star"></div>
             <div class="pop-pr-r-star"></div>
           </div>
-          <div class="pop-pr-r-txt">7 отзывов</div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
         </div>
       </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1">в наличии</div>
+      <div class="status-2"></div>      
     </div>
   </div>
-</a>
-        </div><!--cat-teasers-col-->
-        <div class="cat-teasers-col">
-          <a href="#" class="pop-cat-it pop-cat-it-2">
-  <div class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></a>
   <div class="pop-cat-inf">
     <div class="pop-cat-inf-w">
       <div class="pop-cat-inf-txt-w">
-        <div class="pop-cat-inf-txt-1">Укулеле</div>
-        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
       </div>
       <div class="pop-cat-inf-pr-w">
         <div class="pop-pr-l">
@@ -323,21 +433,40 @@
             <div class="pop-pr-r-star"></div>
             <div class="pop-pr-r-star"></div>
           </div>
-          <div class="pop-pr-r-txt">7 отзывов</div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
         </div>
       </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1"></div>
+      <div class="status-2">под заказ</div>      
     </div>
   </div>
-</a>
-        </div><!--cat-teasers-col-->
-        <div class="cat-teasers-col">
-          <a href="#" class="pop-cat-it pop-cat-it-2">
-  <div class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop4.png" class="pop-cat-img" /></a>
   <div class="pop-cat-inf">
     <div class="pop-cat-inf-w">
       <div class="pop-cat-inf-txt-w">
-        <div class="pop-cat-inf-txt-1">Укулеле</div>
-        <div class="pop-cat-inf-txt-2">Enya EUC-MAD</div>
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
       </div>
       <div class="pop-cat-inf-pr-w">
         <div class="pop-pr-l">
@@ -352,18 +481,292 @@
             <div class="pop-pr-r-star"></div>
             <div class="pop-pr-r-star"></div>
           </div>
-          <div class="pop-pr-r-txt">7 отзывов</div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
         </div>
       </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1"></div>
+      <div class="status-2">под заказ</div>      
     </div>
   </div>
-</a>
-        </div><!--cat-teasers-col-->
-      </div><!--cat-teasers-row-->
-    </div><!--col-r-->
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></a>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
+        </div>
+      </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1">в наличии</div>
+      <div class="status-2"></div>      
+    </div>
+  </div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></a>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
+        </div>
+      </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1"></div>
+      <div class="status-2">под заказ</div>      
+    </div>
+  </div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop3.png" class="pop-cat-img" /></a>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
+        </div>
+      </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1">в наличии</div>
+      <div class="status-2"></div>      
+    </div>
+  </div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop2.png" class="pop-cat-img" /></a>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
+        </div>
+      </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1"></div>
+      <div class="status-2">под заказ</div>      
+    </div>
+  </div>
+</div>
+
+          </div><!--cat-teasers-col-->
+          <div class="cat-teasers-col">
+            <div class="pop-cat-it pop-cat-it-2">
+  <a href="#" class="pop-cat-img-w pop-cat-img-w-2"><img src="img/pop4.png" class="pop-cat-img" /></a>
+  <div class="pop-cat-inf">
+    <div class="pop-cat-inf-w">
+      <div class="pop-cat-inf-txt-w">
+        <a href="#" class="pop-cat-inf-txt-1">Укулеле</a>
+        <a href="#" class="pop-cat-inf-txt-2">Enya EUC-MAD</a>
+      </div>
+      <div class="pop-cat-inf-pr-w">
+        <div class="pop-pr-l">
+          <div class="pop-pr-l-txt-1">₽24 890</div>
+          <div class="pop-pr-l-txt-2">₽24 890</div>
+        </div>
+        <div class="pop-pr-r">
+          <div class="pop-pr-r-star-w">
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+            <div class="pop-pr-r-star"></div>
+          </div>
+          <a href="#" class="pop-pr-r-txt">7 отзывов</a>
+        </div>
+      </div>
+    </div><!--inf-w-->
+    <div class="pop-cat-cahrs">
+      <div class="pop-cat-cahrs-row">
+        <div class="pop-cat-cahrs-l">
+          <a data-fancybox="gallery-1" href="img/gal-1.jpg" class="pop-cat-gal-it"><img src="img/gal-1.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-2.jpg" class="pop-cat-gal-it"><img src="img/gal-2.jpg" /></a>
+          <a data-fancybox="gallery-1" href="img/gal-3.jpg" class="pop-cat-gal-it"><img src="img/gal-3.jpg" /></a>
+        </div>
+        <div class="pop-cat-cahrs-r">
+          <button href="#" class="add-cart">
+            <img src="img/cart.svg" class="add-cart-img" />
+            <span class="add-cart-txt">В КОРЗИНУ</span>
+          </button>
+          <a href="#" class="pop-cat-compare">Добавить к сравнению </a>
+        </div>
+      </div>
+      <div class="status-1"></div>
+      <div class="status-2">под заказ</div>      
+    </div>
+  </div>
+</div>
+
+          </div><!--cat-teasers-col-->
+        </div><!--cat-teasers-row-->
+        <div class="pagin">
+          <a href="#" class="pagin-nav">Первая</a>
+          <ul>
+            <li class="pagin-prev pagin-arrow"><a href="#"><img src="img/pagin-l.png" alt=""></a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li class="pagin-next pagin-arrow"><a href="#"><img src="img/pagin-r.png" alt=""></a></li>
+          </ul>
+          <a href="#" class="pagin-nav active">Последняя</a>
+        </div>
+      </div><!--col-r-->
+    </div>
   </div><!--cols-->
+</div><!--cols-->
 
-</div><!--contain-->
 
 
 </main>
@@ -444,8 +847,10 @@
 <!--wrapper-->
 
 <script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/wNumb.min.js"></script>
 <script src="js/nouislider.js"></script>
 <script src="js/slick.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
