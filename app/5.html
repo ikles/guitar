@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5. Подбор инструментов</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      @@include('var/_top.html')
+    </header>
+    @@include('var/_servmnu.html')
+    <main class="main">      
+      @@include('var/_catalog-top-search2.html')
+      <div class="bread-w bread-4">
+        <div class="contain">
+          <ul class="catalog-search-ul">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Подбор инструмента</a></li>            
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-l">
+          <div class="service-tit">Подбор <br> инструментов</div>
+          <div class="service-bl">это услуга, подразумевающая нашу помощь в выборе инстумента, который будет соответствовать вашим критериям выбора.</div>
+        </div>
+        <div class="service-r">
+          <div class="service-it">
+            <div class="service-it-tit">Офлайн встреча в нашем магазине</div>
+            <div class="service-it-txt">вы можете приехать в наш магазин, где вы сможете пообщаться с нашими мастерами, поиграть на гитарах и постучать в барабаны</div>
+          </div>
+          <div class="service-it">
+            <div class="service-it-tit">Онлайн чат</div>
+            <div class="service-it-txt">вы можете перейти в онлайн чат и задать все волнующие вас вопросы, а нашему специалист на них ответит</div>
+          </div>
+          <div class="service-it">
+            <div class="service-it-tit">Звонок по видео связи</div>
+            <div class="service-it-txt">вы можем совершить видео звонок, в котором сможем определиться в том, что вам стоит выбрать</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="likeyou likeyou-2">
+        <div class="contain">
+          <div class="pop-w">
+            <h2>Вам понравится</h2>
+            <div class="pop-cat-row likeyou-row">
+              <a href="#" class="pop-cat-arr-l"></a>
+              <div class="pop-cat-w likeyou-w">
+                <div class="pop-cat-col likeyou-col ">
+                  @@include('var/_pop_cat_it.html')
+                </div>
+                <div class="pop-cat-col likeyou-col ">
+                  @@include('var/_pop_cat_it.html')
+                </div>
+                <div class="pop-cat-col likeyou-col ">
+                  @@include('var/_pop_cat_it.html')
+                </div>
+                <div class="pop-cat-col likeyou-col ">
+                  @@include('var/_pop_cat_it.html')
+                </div>
+                <div class="pop-cat-col likeyou-col ">
+                  @@include('var/_pop_cat_it.html')
+                </div>
+              </div>              
+            </div><!--pop-cat-row-->
+          </div>
+        </div>
+      </div>
+
+    </main>
+    @@include('var/_footer-no-line.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
+

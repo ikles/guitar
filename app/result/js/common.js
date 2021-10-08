@@ -14,11 +14,22 @@ jQuery(document).ready(function( $ ) {
   });
 
   $('.mnu-close').click(function () {
-
     $(".toggle-mnu").removeClass("on");
     $(".top-mnu").fadeOut();
-
   })
+
+  $('.overlay').click(function () {    
+    $(this).fadeOut();
+    $('.servmnu').fadeOut();
+  });
+
+  $('.serv-col-1-int-l, .serv-close').click(function (e) {
+    $('.overlay, .servmnu').fadeOut();
+  });
+  
+  $('.servs-js').click(function (e) {
+    $('.overlay, .servmnu').fadeIn();
+  });
 
 
   $(".top-mnu").click(function (e) {
