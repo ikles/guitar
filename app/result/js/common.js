@@ -47,6 +47,18 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+  $('.filter-its').click(function (e) {
+    e.preventDefault();
+    $('.filter-cat-w').slideDown();
+    $('.overlay2').fadeToggle();
+  });
+
+    $('.overlay2').click(function (e) {    
+    $('.filter-cat-w').slideUp();
+    $(this).fadeOut();
+  });
+
+
 
   $('.lfilter-it').each(function () {
     let tit = $(this).find('.lfilter-tit');
