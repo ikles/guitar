@@ -283,6 +283,13 @@
 .rep-typ-txt-1 {
   font-size: 20px;
 }
+.top-mnu-2 {
+ li {
+   a {
+     font-size: 9px;
+   }
+ } 
+}
 } 
 
 /* Small Devices, Tablets */
@@ -290,15 +297,13 @@
   .contain {
     max-width: 600px;
   }
-
-
-
-  .top-mnu {
+  
+  .top-mnu-1 {    
     display: none;
     position: absolute;
     left: 0;
     top: 0px;
-    z-index: 15;
+    z-index: 31;
     background-color: #000; 
     width: 100%;
     padding: 30px 15px 40px 15px;
@@ -313,10 +318,12 @@
       font-size: 16px;
     }    
   }
+  .hidden-mnu-1 {
+        display: flex;
+  }
   .hidden-mnu {    
     position: relative;
-    z-index: 11;
-    display: flex;    
+    z-index: 11;    
     align-items: center;
   }
   .mnu-txt {
@@ -484,7 +491,7 @@
     width: 100%;
   }
   .rep-maint {    
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .rep-maint-inf-w {
     width: 100%;
@@ -492,12 +499,21 @@
   }  
   
   .rep-typs {    
-            justify-content: flex-start;
-            margin: 0 -15px;
+    justify-content: flex-start;
+    margin: 0 -15px;
   }
   .rep-typ {
     width: calc(33.333% - 15px);
     margin: 0 7.5px 22px 7.5px;
+  }
+  .catalog-top-search-w-2 {               
+                    
+  }
+  .col-mnu-2 {
+    order: -1;
+  }
+  .top-mnu-2 li a {
+    font-size: 16px;
   }
 }      
 
@@ -571,7 +587,7 @@
     margin-bottom: 33px;
   }
   .service-row {    
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .service-l,
   .service-r {
@@ -792,13 +808,13 @@
 }
 .card-th-video:before {
  width: 30px;
-  height: 23px;    
-  background-size: cover; 
+ height: 23px;    
+ background-size: cover; 
 }
 .cardtabs {
   .tabs_content {
-  padding: 20px;
-}
+    padding: 20px;
+  }
 }
 .tabs_content_item.video {
   height: 172px;
@@ -810,7 +826,7 @@
   font-size: 14px;
 }
 .tabs_content {  
-          border-radius: 35px;
+  border-radius: 35px;
 }
 .serv-arr-up {
   right: 25px;
@@ -857,6 +873,12 @@
   .cat-teasers-col {
     padding-left: 0;
     padding-right: 0;
+  }
+  .catalog-top-search-w-2 .catalog-top-logo {
+    width: 100px;
+    img {
+      max-width: 100%;
+    }
   }
 }
 

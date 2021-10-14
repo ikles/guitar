@@ -479,6 +479,9 @@ input[type="text"].top-2-input-text {
   height: 151px;
   img {
     max-height: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: unset;
   }
 }
 
@@ -1374,6 +1377,22 @@ h2 {
   }
 }
 
+.big-video {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: url("../img/card-video.png") $nr 0 0;
+    width: 100px;
+    height: 100px;    
+    background-size: 93px;
+  }
+}
+
 
 .filter-label {
   margin-bottom: 12px;
@@ -1445,6 +1464,10 @@ h2 {
 .catalog-form {  
   flex-grow: 1;
   margin-right: 14px;
+  display: none;
+  &.on {
+    display: flex;
+  }
 }
 
 .bread-w {
@@ -2082,8 +2105,7 @@ option {
 
 .catalog-top-search-w-2 {  
   justify-content: space-between;
-  .catalog-top-logo {
-    margin-right: unset;
+  .catalog-top-logo {    
   }
   .top-2-r {
     margin-left:  unset;
@@ -2653,8 +2675,8 @@ option {
   z-index: 2;
 }
 .rep-typ-img-w {
-border-radius: 0px 0px 67px 0px;  
-overflow: hidden;
+  border-radius: 0px 0px 67px 0px;  
+  overflow: hidden;
 }
 
 
