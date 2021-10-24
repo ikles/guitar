@@ -1304,7 +1304,7 @@ $('.minheight').bind('textchange', function() {
 });
 
 $('.maxwidth').bind('textchange', function() {        
-  $('#active').css( "max-width",  $('.maxwidth').val());
+  $('#active').css( "max-width",  $('.maxwidth').val()+'px');
 });
 
 $('.margin_bottom').bind('textchange', function() {        

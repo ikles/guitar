@@ -4059,6 +4059,11 @@ option {
 .weelook {
   margin-top: 10px; }
 
+.contain-979 {
+  width: 100%;
+  margin: auto;
+  max-width: 979px; }
+
 .weelook-w {
   display: -webkit-flex;
   display: -ms-flexbox;
