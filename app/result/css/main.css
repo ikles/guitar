@@ -4059,11 +4059,6 @@ option {
 .weelook {
   margin-top: 10px; }
 
-.contain-979 {
-  width: 100%;
-  margin: auto;
-  max-width: 979px; }
-
 .weelook-w {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4099,6 +4094,13 @@ option {
 
 .bread-6 {
   margin-top: 25px; }
+
+.scard-tbl .dots {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAAAAAA+i0toAAAAAnRSTlMA/1uRIrUAAAAMSURBVHheY7j1/z8ABY8C2UtBe8oAAAAASUVORK5CYII=) 0 80% repeat-x; }
+
+.scard-tbl .dots span {
+  background: #fff;
+  padding-right: 5px; }
 
 @media only screen and (max-width: 1314px) {
   .cat-teasers-col {
