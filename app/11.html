@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>11. В корзину</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      @@include('var/_top.html')
+    </header>
+    @@include('var/_servmnu.html')
+    <main class="main">      
+      @@include('var/_catalog-top-search2.html')
+      <div class="bread-w bread-4">
+        <div class="contain">
+          <ul class="catalog-search-ul">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Катало</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="cartpage">
+        <div class="contain">
+          <div class="ctable">
+            <div class="ctable-item-row">
+              <div class="ctable-l">
+                <div class="ctable-top">
+                  <div class="ctable-col-1"><div class="ctable-col-1">НАИМЕНОВАНИЕ</div></div>
+                  <div class="ctable-col-2">КОЛ-ВО</div>
+                  <div class="ctable-col-3">ЦЕНА</div>
+                </div>
+                <div class="ctable-item">            
+                  <div class="ctable-bot">
+                    <div class="ctable-col-11">
+                      <div class="ctable-product-row">
+                        <a href="#" class="ctable-product-img-w"><img src="img/ctable-product-img-1.jpg" class="ctable-product-img" /></a>
+                        <div class="ctable-product-info">
+                          <a href="#" class="ctable-product-name">АКУСТИЧЕСКАЯ ГИТАРА KEPMA A1C NATURAL</a>
+                          <ul class="ctable-product-ul">
+                            <li class="ctable-product-li">Обечайки: Махагон</li>
+                            <li class="ctable-product-li">Верхняя дека: Ель</li>
+                            <li class="ctable-product-li">Задняя дека: Махагон</li>
+                            <li class="ctable-product-li">Материал грифа: Красное дерево</li>
+                            <li class="ctable-product-li">Накладка: Палисандр</li>
+                            <li class="ctable-product-li">Колки: Фирменные закрытые</li>
+                            <li class="ctable-product-li">Порожки: Nu-Bone</li>
+                            <li class="ctable-product-li">Бридж: Палисандр</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ctable-col-22">
+                      <div class="number" data-step="1" data-min="1" data-max="100">
+                        <a href="#" class="number-minus">−</a>
+                        <input class="number-text" type="text" name="count" value="1">
+                        <a href="#" class="number-plus">+</a>
+                      </div>
+                    </div>
+                    <div class="ctable-col-33">19 500₽</div>
+                  </div>
+                </div><!--item-->
+                <div class="ctable-item">
+
+                  <div class="ctable-bot">
+                    <div class="ctable-col-11">
+                      <div class="ctable-product-row">
+                        <a href="#" class="ctable-product-img-w"><img src="img/ctable-product-img-1.jpg" class="ctable-product-img" /></a>
+                        <div class="ctable-product-info">
+                          <a href="#" class="ctable-product-name">АКУСТИЧЕСКАЯ ГИТАРА KEPMA A1C NATURAL</a>
+                          <ul class="ctable-product-ul">
+                            <li class="ctable-product-li">Обечайки: Махагон</li>
+                            <li class="ctable-product-li">Верхняя дека: Ель</li>
+                            <li class="ctable-product-li">Задняя дека: Махагон</li>
+                            <li class="ctable-product-li">Материал грифа: Красное дерево</li>
+                            <li class="ctable-product-li">Накладка: Палисандр</li>
+                            <li class="ctable-product-li">Колки: Фирменные закрытые</li>
+                            <li class="ctable-product-li">Порожки: Nu-Bone</li>
+                            <li class="ctable-product-li">Бридж: Палисандр</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ctable-col-22">
+                      <div class="number" data-step="1" data-min="1" data-max="100">
+                        <a href="#" class="number-minus">−</a>
+                        <input class="number-text" type="text" name="count" value="4">
+                        <a href="#" class="number-plus">+</a>
+                      </div>
+                    </div>
+                    <div class="ctable-col-33">78 000₽</div>
+                  </div>
+                </div><!--item-->
+                <div class="ctable-item">
+
+                  <div class="ctable-bot">
+                    <div class="ctable-col-11">
+                      <div class="ctable-product-row">
+                        <a href="#" class="ctable-product-img-w"><img src="img/ctable-product-img-1.jpg" class="ctable-product-img" /></a>
+                        <div class="ctable-product-info">
+                          <a href="#" class="ctable-product-name">АКУСТИЧЕСКАЯ ГИТАРА KEPMA A1C NATURAL</a>
+                          <ul class="ctable-product-ul">
+                            <li class="ctable-product-li">Обечайки: Махагон</li>
+                            <li class="ctable-product-li">Верхняя дека: Ель</li>
+                            <li class="ctable-product-li">Задняя дека: Махагон</li>
+                            <li class="ctable-product-li">Материал грифа: Красное дерево</li>
+                            <li class="ctable-product-li">Накладка: Палисандр</li>
+                            <li class="ctable-product-li">Колки: Фирменные закрытые</li>
+                            <li class="ctable-product-li">Порожки: Nu-Bone</li>
+                            <li class="ctable-product-li">Бридж: Палисандр</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ctable-col-22">
+                      <div class="number" data-step="1" data-min="1" data-max="100">
+                        <a href="#" class="number-minus">−</a>
+                        <input class="number-text" type="text" name="count" value="2">
+                        <a href="#" class="number-plus">+</a>
+                      </div>
+                    </div>
+                    <div class="ctable-col-33">39 000₽</div>
+                  </div>
+                </div><!--item-->
+              </div><!--l-->
+              <div class="ctable-r">
+                <div class="ctotal">
+                  <div class="ctotal-tit">ИТОГО</div>
+                  <div class="ctotal-row">
+                    <div class="ctotal-col-1">Общее количество:</div>
+                    <div class="ctotal-col-2"><span class="ctotal-сщгте">7</span> шт</div>
+                  </div>
+                  <div class="ctotal-row">
+                    <div class="ctotal-col-1">Общая стоимость:</div>
+                    <div class="ctotal-col-2"><span class="ctotal-summ">136 500</span> ₽</div>
+                  </div>
+                </div>
+                <form class="pform">
+                  <input class="pform-input" type="text" placeholder="Укажите промо-код" />
+                  <a href="#" class="pform-btn">Перейти к оформлению </a></form>
+                  <a href="#" class="retuenbuy">
+                    <img src="img/reload.png" class="retuenbuy-icon" />Продолжить покупки
+                  </a>
+                </div><!--r-->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="likeyou likeyou-11">
+          <div class="contain">
+            <div class="pop-w">
+              <h2>Вместе с этим покупают </h2>
+              <div class="pop-cat-row likeyou-row">
+                <a href="#" class="pop-cat-arr-l"></a>
+                <div class="pop-cat-w likeyou-w">
+                  <div class="pop-cat-col likeyou-col ">
+                    @@include('var/_pop_cat_it.html')
+                  </div>
+                  <div class="pop-cat-col likeyou-col ">
+                    @@include('var/_pop_cat_it.html')
+                  </div>
+                  <div class="pop-cat-col likeyou-col ">
+                    @@include('var/_pop_cat_it.html')
+                  </div>
+                  <div class="pop-cat-col likeyou-col ">
+                    @@include('var/_pop_cat_it.html')
+                  </div>
+                  <div class="pop-cat-col likeyou-col ">
+                    @@include('var/_pop_cat_it.html')
+                  </div>
+                </div>              
+              </div><!--pop-cat-row-->
+            </div>
+          </div>
+        </div>
+
+
+      </main>
+      @@include('var/_footer-no-line.html')
+    </div>
+    <!--wrapper-->
+
+    @@include('var/_scripts.html')
+  </body>
+  </html>
+

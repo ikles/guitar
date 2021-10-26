@@ -111,7 +111,7 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -123,7 +123,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});
+});*/
 
 /************************************/
 
@@ -230,6 +230,68 @@ $('.accordion-header').toggleClass('inactive-header');
       ]
     });
   }
+
+
+  if($('.rep-typs-2').length) {
+    $('.rep-typs-2').slick({  
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,   
+      responsive: [
+
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3        
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      ]
+    });
+  }
+
+  if($('.revideo-items').length) {
+    $('.revideo-items').slick({  
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,   
+      responsive: [
+
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2        
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      ]
+    });
+  }
+
 
 
 /*
@@ -347,6 +409,37 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
 
+  $('body').on('click', '.number-minus, .number-plus', function(){
+    var $row = $(this).closest('.number');
+    var $input = $row.find('.number-text');
+    var step = $row.data('step');
+    var val = parseFloat($input.val());
+    if ($(this).hasClass('number-minus')) {
+      val -= step;
+    } else {
+      val += step;
+    }
+    $input.val(val);
+    $input.change();
+    return false;
+  });
+ 
+  $('body').on('change', '.number-text', function(){
+    var $input = $(this);
+    var $row = $input.closest('.number');
+    var step = $row.data('step');
+    var min = parseInt($row.data('min'));
+    var max = parseInt($row.data('max'));
+    var val = parseFloat($input.val());
+    if (isNaN(val)) {
+      val = step;
+    } else if (min && val < min) {
+      val = min;  
+    } else if (max && val > max) {
+      val = max;  
+    }
+    $input.val(val);
+  });
 
 
 
