@@ -4178,6 +4178,7 @@ border-radius: 5px;
 .ctable-col-2 {
   flex: 1 1 auto;
   text-align: right;
+  white-space: nowrap;
 }
 
 .ctable-col-3 {
@@ -4191,8 +4192,7 @@ border-radius: 5px;
 .ctable-bot {
   display: flex;
   color: rgba(255, 255, 255, 0.13);
-  padding: 15px 0px;
-  justify-content: center;
+  padding: 15px 0px;  
   align-items: center;  
   position: relative;
   &:before {
@@ -4710,8 +4710,7 @@ input[type="text"].number-text {
   line-height: 16px;
 }
 
-.checkout-row-form {
-  margin-right: 13px;
+.checkout-row-form {  
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
