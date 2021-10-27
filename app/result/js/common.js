@@ -73,6 +73,15 @@ jQuery(document).ready(function( $ ) {
     $(this).fadeOut();
   });
 
+$('#checkout-control-2').click(function () {
+  $('.checkout-content-item').removeClass('active');
+  $('.checkout-content-item-2').addClass('active');
+});
+
+$('#checkout-control-1').click(function () {
+  $('.checkout-content-item').removeClass('active');
+  $('.checkout-content-item-1').addClass('active');
+});
 
 
   $('.card-thumb').click(function (e) {
