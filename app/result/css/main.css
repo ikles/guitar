@@ -4588,7 +4588,6 @@ input[type="text"].revform-input {
 
 textarea.revform-textarea {
   box-shadow: rgba(255, 255, 255, 0.24) 0px 4px 15px 1px;
-  border-radius: 15px;
   width: 100%;
   height: 184px;
   padding: 19px 28px;
@@ -4596,8 +4595,10 @@ textarea.revform-textarea {
   font-style: italic;
   margin-top: 0px;
   font-size: 14px;
+  margin-bottom: 0px;
   border: none;
-  margin-bottom: 0px; }
+  outline: none;
+  border-radius: 15px; }
 
 .addmark {
   margin-top: 18px;
@@ -4815,17 +4816,22 @@ input[type="text"].distrib-input {
     background: rgba(13, 37, 255, 0.6); }
 
 textarea.revform-textarea {
-  border: 1px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
-  border-radius: 5px;
-  height: 89px;
+  border-radius: 15px;
+  height: 184px;
   width: 100%;
   background: none;
-  padding: 14px;
+  padding: 28px;
   font-size: 14px; }
   textarea.revform-textarea:focus {
     outline: none;
     background: rgba(13, 37, 255, 0.6); }
+
+textarea.distrib-area {
+  padding: 14px;
+  height: 89px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px; }
 
 .revform-btn {
   background: none;
