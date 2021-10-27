@@ -3489,8 +3489,8 @@ option {
 }
 
 .getus-l {
-  margin-right: 42px;
-  width: 50%;
+  margin-right: 42px;  
+          flex-grow: 1;
 }
 
 .h2-left {
@@ -3541,7 +3541,8 @@ option {
   width: 526px;
   flex: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+          align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -3568,7 +3569,7 @@ option {
 
 
 .rep-typs-2 {
-  margin: 0 -10px;
+  
   .slick-dots {
     bottom: -2px;
   }

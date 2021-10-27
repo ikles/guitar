@@ -111,6 +111,30 @@
 .service-row {
   padding: 0 15px;
 }
+.getus-w {
+          flex-wrap: wrap; 
+}
+.getus-l,
+.getus-r {
+  margin-right: 0;
+  width: 100%;
+}
+.getus-r {
+  margin-top: 15px;
+}
+.getus {
+  margin-top: 0;
+}
+.hcontacts-row {
+  padding-bottom: 60px;
+}
+.sameway {
+  margin-bottom: 38px;
+  margin-top: 65px;
+}
+.hcontacts-l {
+  width: 299px;
+}
 }
 
 
@@ -289,6 +313,32 @@
      font-size: 9px;
    }
  } 
+}
+.we-it-w {
+  margin-top: -20px;
+}
+.hcontacts-row {  
+          flex-wrap: wrap;
+          padding-bottom: 31px;
+}
+.hcontacts-l {  
+  width: 100%;
+}
+.hcontacts-r {
+  padding-left: 0;
+  margin-top: 10px;
+}
+.contsitem {
+  margin-top: 35px !important;
+}
+.hcontacts-item-col, .hcontacts-item-col-2 {
+  width: 50%;
+}
+.vidblock-8 {
+  margin-bottom: 0;
+}
+.revblock {
+  padding: 30px 40px;
 }
 } 
 
@@ -515,6 +565,51 @@
   .top-mnu-2 li a {
     font-size: 16px;
   }
+  .we-img-w {
+    height: 289px;
+  }
+  .we-txt {
+    font-size: 17px;
+  }
+  .we-img-ab-act-txt-1 {
+    font-size: 17px;
+    margin-bottom: 7px;
+  }
+  .we-img-ab-act-txt-2 {
+    font-size: 12px;
+  }
+  .wehere-l {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .wehere-r {
+    padding-left: 25px;
+  }
+  .weelook-item {
+    height: 260px;
+  }
+  .deliv-row {
+    > div {
+      margin: 0 5px;
+    }
+  }
+  .revideo {
+    margin-top: 53px;
+  }
+  .revblock-revs {
+    margin-bottom: 31px;
+  }
+  .distrib-form {    
+            flex-wrap: wrap;
+  }
+  .distrib-form-left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
+  .revform-btn-w {
+    margin-top: 9px;
+  }
 }      
 
 @media only screen and (max-width : 640px) {
@@ -607,6 +702,49 @@
   }
   .service-tit {
     margin-bottom: 25px;
+  }
+  .hcontacts-r {    
+            flex-wrap: wrap;
+  }
+  .hcontacts-item-col, .hcontacts-item-col-2 {
+    width: 100%;
+  }
+  .hcontacts-item-col-2 {
+    padding-left: 0;
+  }
+  .rep-typs-2 .rep-typ {
+    margin-left: 0;
+    margin-right: 0;
+  }
+    .deliv-row {      
+              flex-wrap: wrap;
+    > div {
+      width: 100%;
+      margin: 0;
+      border-top: 1px solid rgba(#fff, 0.18);
+      padding-top: 15px;
+      + div {
+        margin-top: 15px;
+      }
+    }
+  }
+  .deliv-col-tit {
+    margin-bottom: 5px;
+  }
+  .revform-btn-w {    
+            flex-wrap: wrap;
+            .revform-polyt {
+   width: 100%;
+   margin-left: 0;
+   margin-top: 9px; 
+  }
+  }
+  .revform-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .distrib-w-2 {
+    padding-bottom: 41px;
   }
 } 
 
@@ -710,6 +848,40 @@
       width: 100%;
       height: 100%;
     }
+  }
+  .where-row {    
+            flex-wrap: wrap;
+            margin-top: 25px;
+            > div {
+              width: 100%;
+              + div {
+                margin-top: 15px;
+              }              
+            }
+  }
+  .where-w {
+    padding: 24px 25px;
+  }
+  .where-it + .where-it {
+    margin-top: 27px;
+  }
+  .we-it {
+    width: calc(50% - 11px);
+    margin-bottom: 15px;
+  }
+  .weelook-item {
+    height: 190px;
+  }
+  .revblock {
+    padding: 20px 30px;
+  }
+  .revform-bot {    
+            flex-wrap: wrap;
+  }
+  .revform-polyt {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
   }
 }
 
@@ -835,6 +1007,35 @@
 .ref-w {
   margin-top: 13px;
 }
+.service-tit {
+  font-size: 25px;
+}
+.weelook-w {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.weelook-col {
+  padding: 0 5px;
+}
+.ref-w {
+  margin-top: 45px;
+}
+.sameway {
+  margin-bottom: 19px;
+}
+.hcontacts-tit {
+font-size: 31px;  
+}
+.distrib-tit {
+  font-size: 31px;
+}
+.getus-gal-item {
+  height: 152px;
+}
+.revpage-desc {
+  font-size: 15px;
+  line-height: 1.2;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -880,6 +1081,23 @@
       max-width: 100%;
     }
   }
+  .catalog-top-logo {
+    margin-right: 0;
+  }
+  .ritem-img-w {
+    width: 40px;
+    height: 40px;
+  }
+  .revblock {
+    padding: 20px 15px;
+  }
+  .ritem-content {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .distrib {
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width : 360px) {
@@ -920,6 +1138,23 @@
   }
   .rep-typ-img-w {
     height: 220px;
+  }
+  .we-img-ab-act {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+  .service-tit {
+    margin-bottom: 4px;
+  }
+  .wehere-r .service-it + .service-it {
+    margin-top: 24px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .hcontacts-item-link {
+    font-size: 13px;
   }
 }
 
