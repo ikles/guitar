@@ -39,8 +39,8 @@
           <div class="cols">
             <div class="col-l">
               <div class="lfilter-caps">
-                <span>Каталог</span>
-                <span>Фильтры</span>
+                <span class="lfilter-cap-1">Каталог</span>
+                <span class="lfilter-cap-2">Фильтры</span>
               </div>
               <div class="lfilter">
                 <div class="lfilter-it">
@@ -84,6 +84,11 @@
                   </div>
                 </div><!--lfilter-it-->
               </div><!--lfilter-->
+
+              <div class="catfilter-stat-left">
+                @@include('var/_filter-inner2.html')
+              </div>
+
             </div><!--col-l-->
             <div class="col-r">
               <div class="cat-teasers-actions hide-991">
@@ -134,241 +139,115 @@
                     <a href="#" class="filter-its"><span class="filter-its-span">ФИЛЬТР</span><img src="img/filter.svg" class="filter-its-b" /></a>
                     <div class="filter-cat-w">
                       <div class="filter-cat-ind">
-                        <div class="catfilter-it">
-                          <div class="catfilter-tit">Цена</div>
-                          <div class="catfilter-cont">
-                           <div class="price__range"></div>  
-                         </div><!--cont-->
-                       </div><!--it-->
+                        @@include('var/_filter-inner.html')
+                      </div>
+                    </div>
+                  </div>      
+                </div><!--filter-->
 
-                       <div class="catfilter-it">
-                        <div class="catfilter-tit">Категория</div>
-                        <div class="catfilter-cont">
-                          <label class="filter-label">
-                            <input type="checkbox" class="filter-checkbox">
-                            <span class="filter-label-span"></span>
-                            <span class="filter-label-span-txt">Укулеле</span>
-                          </label>
-                          <label class="filter-label">
-                            <input type="checkbox" class="filter-checkbox">
-                            <span class="filter-label-span"></span>
-                            <span class="filter-label-span-txt">Укулеле</span>
-                          </label>
-                          <label class="filter-label">
-                            <input type="checkbox" class="filter-checkbox" checked>
-                            <span class="filter-label-span"></span>
-                            <span class="filter-label-span-txt">Укулеле тенор</span>
-                          </label>
-                          <label class="filter-label">
-                            <input type="checkbox" class="filter-checkbox">
-                            <span class="filter-label-span"></span>
-                            <span class="filter-label-span-txt">Укулеле</span>
-                          </label>
-                        </div><!--lbls-->
+                <div class="teasers-actions-col-3">    
+                  <select class="select teasers-actions-select">
+                    <option value="Сортировать по ...">Сортировать по ...</option>
+                    <option value="По возрастанию цены">По возрастанию цены</option>
+                    <option value="По убыванию цены">По убыванию цены</option>
+                  </select>
+                </div>
 
+              </div><!--show-991-->
 
-                      </div><!--it-->
+              <!--cat-teasers-actions-->
+              <div class="cat-teasers-row">          
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop2",
+                    "status1":"",
+                    "status2":"под заказ"
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop3",
+                    "status1":"в наличии",
+                    "status2":""
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop2",
+                    "status1":"",
+                    "status2":"под заказ"
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop4",
+                    "status1":"",
+                    "status2":"под заказ"
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop2",
+                    "status1":"в наличии",
+                    "status2":""              
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop2",
+                    "status1":"",
+                    "status2":"под заказ"
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop3",
+                    "status1":"в наличии",
+                    "status2":""
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop2",
+                    "status1":"",
+                    "status2":"под заказ"
+                  })
+                </div><!--cat-teasers-col-->
+                <div class="cat-teasers-col">
+                  @@include('var/_pop_cat_it2.html',{
+                    "img":"pop4",
+                    "status1":"",
+                    "status2":"под заказ"
+                  })
+                </div><!--cat-teasers-col-->
+              </div><!--cat-teasers-row-->
+              <div class="pagin">
+                <a href="#" class="pagin-nav">Первая</a>
+                <ul>
+                  <li class="pagin-prev pagin-arrow"><a href="#"><img src="img/pagin-l.png" alt=""></a></li>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li class="pagin-next pagin-arrow"><a href="#"><img src="img/pagin-r.png" alt=""></a></li>
+                </ul>
+                <a href="#" class="pagin-nav active">Последняя</a>
+              </div>
+            </div><!--col-r-->
+          </div>
+        </div><!--cols-->
+      </div><!--cols-->
 
+      @@include('var/_vidblock.html')
 
-                      <div class="catfilter-it">
-                        <div class="catfilter-tit hide">Гриф</div>
-                        <div class="catfilter-cont hide">
-                         <label class="filter-label">
-                          <input type="checkbox" class="filter-checkbox">
-                          <span class="filter-label-span"></span>
-                          <span class="filter-label-span-txt">Укулеле</span>
-                        </label>
-                        <label class="filter-label">
-                          <input type="checkbox" class="filter-checkbox">
-                          <span class="filter-label-span"></span>
-                          <span class="filter-label-span-txt">Укулеле</span>
-                        </label>
-                      </div><!--cont-->
-                    </div><!--it-->
-
-                    <div class="catfilter-it">
-                      <div class="catfilter-tit hide">Накладка</div>
-                      <div class="catfilter-cont hide">
-                       <label class="filter-label">
-                        <input type="checkbox" class="filter-checkbox">
-                        <span class="filter-label-span"></span>
-                        <span class="filter-label-span-txt">Укулеле</span>
-                      </label>
-                      <label class="filter-label">
-                        <input type="checkbox" class="filter-checkbox">
-                        <span class="filter-label-span"></span>
-                        <span class="filter-label-span-txt">Укулеле</span>
-                      </label>
-                    </div><!--cont-->
-                  </div><!--it-->
-                  <div class="catfilter-it">
-                    <div class="catfilter-tit hide">Производитель</div>
-                    <div class="catfilter-cont hide">
-                     <label class="filter-label">
-                      <input type="checkbox" class="filter-checkbox">
-                      <span class="filter-label-span"></span>
-                      <span class="filter-label-span-txt">Укулеле</span>
-                    </label>
-                    <label class="filter-label">
-                      <input type="checkbox" class="filter-checkbox">
-                      <span class="filter-label-span"></span>
-                      <span class="filter-label-span-txt">Укулеле</span>
-                    </label>
-                  </div><!--cont-->
-                </div><!--it-->
-                <div class="catfilter-it">
-                  <div class="catfilter-tit hide">Тип корпуса</div>
-                  <div class="catfilter-cont hide">
-                   <label class="filter-label">
-                    <input type="checkbox" class="filter-checkbox">
-                    <span class="filter-label-span"></span>
-                    <span class="filter-label-span-txt">Укулеле</span>
-                  </label>
-                  <label class="filter-label">
-                    <input type="checkbox" class="filter-checkbox">
-                    <span class="filter-label-span"></span>
-                    <span class="filter-label-span-txt">Укулеле</span>
-                  </label>
-                </div><!--cont-->
-              </div><!--it-->
-              <div class="catfilter-it">
-                <div class="catfilter-tit hide">Количество струн</div>
-                <div class="catfilter-cont hide">
-                 <label class="filter-label">
-                  <input type="checkbox" class="filter-checkbox">
-                  <span class="filter-label-span"></span>
-                  <span class="filter-label-span-txt">Укулеле</span>
-                </label>
-                <label class="filter-label">
-                  <input type="checkbox" class="filter-checkbox">
-                  <span class="filter-label-span"></span>
-                  <span class="filter-label-span-txt">Укулеле</span>
-                </label>
-              </div><!--cont-->
-            </div><!--it-->
-            <div class="catfilter-it">
-              <div class="catfilter-tit hide">Комплект</div>
-              <div class="catfilter-cont hide">
-               <label class="filter-label">
-                <input type="checkbox" class="filter-checkbox">
-                <span class="filter-label-span"></span>
-                <span class="filter-label-span-txt">Укулеле</span>
-              </label>
-              <label class="filter-label">
-                <input type="checkbox" class="filter-checkbox">
-                <span class="filter-label-span"></span>
-                <span class="filter-label-span-txt">Укулеле</span>
-              </label>
-            </div><!--cont-->
-          </div><!--it-->
-        </div>
-      </div>
-    </div>      
-  </div><!--filter-->
-
-  <div class="teasers-actions-col-3">    
-    <select class="select teasers-actions-select">
-      <option value="Сортировать по ...">Сортировать по ...</option>
-      <option value="По возрастанию цены">По возрастанию цены</option>
-      <option value="По убыванию цены">По убыванию цены</option>
-    </select>
+    </main>
+    @@include('var/_footer2.html')
   </div>
+  <!--wrapper-->
 
-</div><!--show-991-->
-
-<!--cat-teasers-actions-->
-<div class="cat-teasers-row">          
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop2",
-      "status1":"",
-      "status2":"под заказ"
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop3",
-      "status1":"в наличии",
-      "status2":""
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop2",
-      "status1":"",
-      "status2":"под заказ"
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop4",
-      "status1":"",
-      "status2":"под заказ"
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop2",
-      "status1":"в наличии",
-      "status2":""              
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop2",
-      "status1":"",
-      "status2":"под заказ"
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop3",
-      "status1":"в наличии",
-      "status2":""
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop2",
-      "status1":"",
-      "status2":"под заказ"
-    })
-  </div><!--cat-teasers-col-->
-  <div class="cat-teasers-col">
-    @@include('var/_pop_cat_it2.html',{
-      "img":"pop4",
-      "status1":"",
-      "status2":"под заказ"
-    })
-  </div><!--cat-teasers-col-->
-</div><!--cat-teasers-row-->
-<div class="pagin">
-  <a href="#" class="pagin-nav">Первая</a>
-  <ul>
-    <li class="pagin-prev pagin-arrow"><a href="#"><img src="img/pagin-l.png" alt=""></a></li>
-    <li><a class="active" href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li class="pagin-next pagin-arrow"><a href="#"><img src="img/pagin-r.png" alt=""></a></li>
-  </ul>
-  <a href="#" class="pagin-nav active">Последняя</a>
-</div>
-</div><!--col-r-->
-</div>
-</div><!--cols-->
-</div><!--cols-->
-
-@@include('var/_vidblock.html')
-
-</main>
-@@include('var/_footer2.html')
-</div>
-<!--wrapper-->
-
-@@include('var/_scripts.html')
+  @@include('var/_scripts.html')
 </body>
 </html>
 
