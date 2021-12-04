@@ -367,11 +367,11 @@ $('.accordion-header').toggleClass('inactive-header');
  });
 
 
-/*  if($('select').length) {
+ if($('select').length) {
     $('select').select2({
       minimumResultsForSearch: -1
     });
-  }*/
+  }
 
   $('[data-fancybox="gallery-1"]').fancybox({
     arrows: true,

@@ -2638,6 +2638,8 @@ input[type="text"].catalog-search-input-text {
     font-size: 24px;
     color: #FFFFFF;
     font-weight: 400; }
+    .lfilter-caps span:hover {
+      color: #EA8305; }
 
 .cat-teasers-actions {
   display: -webkit-flex;
@@ -2697,14 +2699,6 @@ input[type="text"].catalog-search-input-text {
     .teasers-actions-label input[type="checkbox"]:checked + span {
       background-color: #D87700; }
 
-select {
-  border: none;
-  outline: none; }
-
-option {
-  background-color: #000;
-  color: #FFF; }
-
 .teasers-actions-col-3 {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2731,6 +2725,59 @@ option {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.teasers-actions-select-2 + .select2-container .select2-selection--single {
+  max-width: 64px; }
+  .teasers-actions-select-2 + .select2-container .select2-selection--single .select2-selection__rendered {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+select {
+  border: none;
+  outline: none; }
+
+option {
+  background-color: #000;
+  color: #FFF; }
+
+.select2-container .select2-selection--single {
+  background: rgba(196, 196, 196, 0.3);
+  border: none;
+  height: 24px;
+  max-width: 182px; }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 21px;
+    line-height: 1;
+    height: 24px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .select2-container .select2-selection--single .select2-selection__arrow b {
+    display: none; }
+
+.select2-container .select2-dropdown {
+  border: none;
+  border-radius: 0;
+  background: #48484c;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 182px; }
+
+.select2-container .select2-search--dropdown {
+  border: none; }
+  .select2-container .select2-search--dropdown .select2-search__field {
+    border: none; }
+
+.select2-container .select2-results {
+  border: none;
+  background: rgba(196, 196, 196, 0.3); }
+
+.select2-container .select2-results__option {
+  border: none; }
 
 .teasers-actions-col-4 {
   display: -webkit-flex;
