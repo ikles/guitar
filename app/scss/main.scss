@@ -251,9 +251,8 @@ body {
 
 .top-2-form {
   display: inline-flex;
-  justify-content: space-between;
-  margin-right: auto;
-  max-width: 190px;
+  justify-content: space-between;  
+  max-width: 320px;
   width: 100%;  
 }
 
@@ -668,6 +667,7 @@ h2 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+          align-items: center;
 }
 
 .pop-pr-l {
@@ -714,7 +714,7 @@ h2 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   text-align: right;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .pop-cat-arr-r {
@@ -1864,7 +1864,7 @@ option {
 
 .pop-cat-cahrs {
   display: none;
-  margin-top: 12px;
+  margin-top: 12px;  
 }
 
 .pop-cat-label {
@@ -1880,6 +1880,9 @@ option {
   .pop-cat-label {
     display: flex;
     cursor: pointer;
+    flex: none;
+    margin-left: 25px;
+    margin-right: 20px;
     input[type="checkbox"] {
       display: none;
       + span {
@@ -1889,7 +1892,7 @@ option {
       }
       &:checked {
         + span {
-          
+          background: url("../img/like-or.png") $nr center;
         }
       }
     }    
@@ -1903,6 +1906,7 @@ option {
   .pop-cat-cahrs {
     display: block;
     margin-top: 0;
+    margin-top: auto;
   }
   .cat-teasers-col {
     width: 100%;  
@@ -2308,13 +2312,15 @@ option {
   overflow: hidden;
   a {
     display: block;    
-    height: 84.77px;
-    margin-bottom: 7px;
+    height: 84.77px;    
     position: relative;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -2356,14 +2362,29 @@ option {
 }
 
 .card-pr-col-2 {   
-  flex-grow: 1;
+  flex-grow: 1;  
+          flex-direction: column;          
 }
 
+
 .card-pr-col-2-w {  
+  display: flex;  
+          flex-grow: 1;
+          flex-direction: column;
+          height: 100%;
+          padding-top: 19px;
+}
+
+.card-pr-col-2-dw-w {
+ width: 100%; 
+ max-width: 420px;
+ margin-top: auto;
+ margin-bottom: 2px;
 }
 
 .card-pr-col-2-top {
-  margin-bottom: 82px;
+  /*margin-bottom: 82px;*/
+  margin-bottom: 0;
 }
 
 .card-inf-top-txt-1 {
@@ -2377,7 +2398,7 @@ option {
 
   font-size: 36px;
   color: rgb(255, 255, 255);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .card-inf-top-btn {
@@ -2387,6 +2408,7 @@ option {
   border: 1px solid #FFD600;
   box-sizing: border-box;
   border-radius: 5px;
+  max-width: 413px;
 }
 
 .card-inf-top-span-1 {
@@ -2410,12 +2432,11 @@ option {
 }
 
 .card-inf-top-txt-3 {
-  margin-top: 13px;
-  
+  margin-top: 13px;  
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.4;
-  margin-bottom: 4px;
+  margin-bottom: 13px;
 }
 
 .card-inf-top-txt-3-a {
@@ -2439,20 +2460,21 @@ option {
 }
 
 .card-inf-dw-l {
-  width: 50%;
-  margin-right: 29px;
+  width: 60%;
+  max-width: 174px;
+  /*margin-right: 29px;*/
+  margin-right: 0;
+  display: flex;  
+          flex-direction: column;
 }
 
-.card-pr-col-2-dw-w {
- width: 100%; 
- max-width: 420px;
-}
+
 
 .card-inf-dw-l-txt-1 {
 
   font-size: 36px;
   color: rgb(255, 255, 255);
-  margin-bottom: 10px;
+  margin-bottom: -2px;
 }
 
 .card-inf-dw-l-txt-2 {
@@ -2471,16 +2493,19 @@ option {
   color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-top: 2px;
 }
 
 .card-inf-dw-r {
   width: 50%;
+  margin-left: 29px;
 }
 
 .card-inf-dw-r-ul {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
+  margin-bottom: 0;
   display: flex;  
   li {
     a {
@@ -2497,8 +2522,10 @@ option {
 
 
 .card-inf-dw-r-soc-w {
-  margin-bottom: 11px;
+  /*margin-bottom: 11px;*/
+  margin-bottom: 0;
   display: flex;
+  margin-top: 9px;
   a {
     display: inline-block;  
     margin-right: 2px ;
@@ -2521,6 +2548,7 @@ option {
   padding-right: 5px;
   max-width: 205.5px;
   width: 100%;
+  margin-top: 0px;
 }
 
 .card-pr-col-2-arr-w {
@@ -3254,6 +3282,7 @@ option {
 .we-img-ab-act-txt-2 {
   font-size: 14px;
   line-height: 1.4;
+  font-style: italic;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -3352,6 +3381,7 @@ option {
 
 .where {
   padding: 28px 0 40px 0;
+  padding-top: 90px;
 }
 .wehere {
   color: rgb(255, 255, 255);
